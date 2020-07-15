@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="itemForm" prefHeight="404.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemFormController">
+   <children>
+      <JFXTextField fx:id="txtItemCode" editable="false" layoutX="14.0" layoutY="63.0" prefHeight="25.0" prefWidth="296.0" promptText="Item Code" />
+      <JFXTextField fx:id="txtItemDescription" layoutX="14.0" layoutY="88.0" prefHeight="25.0" prefWidth="296.0" promptText="Item Description" />
+      <JFXTextField fx:id="txtUnitPrice" layoutX="14.0" layoutY="113.0" prefHeight="25.0" prefWidth="296.0" promptText="Unit Price" />
+      <JFXTextField fx:id="txtQtyOnHand" layoutX="14.0" layoutY="138.0" prefHeight="25.0" prefWidth="296.0" promptText="Qty On Hand" />
+      <Label layoutX="310.0" layoutY="14.0" text="Manage Item" textFill="#de9800">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblItem" layoutX="14.0" layoutY="218.0" prefHeight="172.0" prefWidth="708.0">
+        <columns>
+          <TableColumn prefWidth="145.0" text="Item Code" />
+          <TableColumn prefWidth="173.0" text="Description" />
+            <TableColumn prefWidth="205.0" text="Unit Price" />
+            <TableColumn prefWidth="184.0" text="Qty On Hand" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnSaveItem" layoutX="271.0" layoutY="178.0" onAction="#btnSaveItem_OnAction" prefHeight="31.0" prefWidth="158.0" style="-fx-background-color: #004d06;" text="Save Item" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnDeleteItem" layoutX="564.0" layoutY="178.0" onAction="#btnDeleteItem_OnAction" prefHeight="31.0" prefWidth="158.0" style="-fx-background-color: #660207;" text="Delete Item" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnAddNewItem" layoutX="14.0" layoutY="178.0" onAction="#btnAddNewItem_OnAction" style="-fx-background-color: #040354;" text="Add New Item" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="116.0" fitWidth="125.0" layoutX="597.0" layoutY="13.0" onMouseClicked="#imgHome_OnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/images/home.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

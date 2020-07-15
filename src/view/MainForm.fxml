@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainForm" prefHeight="404.0" prefWidth="945.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+   <children>
+      <ImageView fitHeight="165.0" fitWidth="186.0" layoutX="14.0" layoutY="225.0" onMouseClicked="#imgManageCustomer_OnClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/images/male_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="165.0" fitWidth="155.0" layoutX="194.0" layoutY="233.0" onMouseClicked="#imgManageItem_OnClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/images/manage items.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="165.0" fitWidth="155.0" layoutX="380.0" layoutY="234.0" onMouseClicked="#imgPlaceOrder_OnClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/images/place order.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="165.0" fitWidth="186.0" layoutX="560.0" layoutY="227.0" onMouseClicked="#imgSearchOrder_OnClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/images/search order.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="165.0" fitWidth="186.0" layoutX="747.0" layoutY="220.0" onMouseClicked="#imgSignUp_OnClick" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@/images/signup.png" />
+      </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="406.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@/images/foodcity.png" />
+      </image>
+   </ImageView>
+
+   </children>
+</AnchorPane>
